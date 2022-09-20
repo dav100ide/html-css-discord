@@ -146,8 +146,8 @@ section.hero {
 main > section > * {
   padding: 55px 0;
 }
-main section:nth-child(even) {
-  background-color: #d3d3d3;
+main section:nth-of-type(even) {
+  background-color: #f6f6f6;
 }
 main section:last-of-type {
   text-align: center;
@@ -170,7 +170,13 @@ section h3 {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+/* le onde tra le sezioni  */
+main section::after {
+  content: url(../img/wave.svg);
+  width: 100vw;
+  height: 200px;
+  fill: #f6f6f6;
+}
 /* =============
     footer-top
 ================ */
