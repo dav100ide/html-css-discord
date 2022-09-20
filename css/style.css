@@ -10,12 +10,7 @@
     debug
 ================ */
 
-.debug main section:nth-child(even) {
-  background-color: #d3d3d3;
-}
-
 .debug #closing-section {
-  height: 250px;
   background-color: #228b22;
 }
 .debug footer {
@@ -67,6 +62,11 @@ p {
 /* =============
     common
 ================ */
+html {
+  min-width: 1050px;
+  /* soluzione temporanea per il
+      non-responsiveness */
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -162,22 +162,26 @@ section.hero {
 main > section > * {
   padding: 55px 0;
 }
+main section:nth-child(even) {
+  background-color: #d3d3d3;
+}
+main section:last-of-type {
+  text-align: center;
+}
 .row {
   display: flex;
 }
 
 .col-big {
   width: 70%;
-  padding: 0 50px;
+  padding: 0 25px;
 }
 
 .col-small {
   width: 30%;
+  padding: 0 25px;
 }
-#closing-section {
-  /*la ultima sezione verde*/
-  width: 100%;
-}
+
 /* =============
     footer-top
 ================ */
