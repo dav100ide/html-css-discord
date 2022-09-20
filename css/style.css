@@ -172,10 +172,7 @@ section h3 {
 }
 /* le onde tra le sezioni  */
 main section::after {
-  content: url(../img/wave.svg);
-  width: 100vw;
-  height: 200px;
-  fill: #f6f6f6;
+  content: url(../img/wave-gray.svg);
 }
 /* =============
     footer-top
