@@ -1,33 +1,17 @@
 /* =============
-    reset
+    html reset
 ================ */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* =============
-    debug
-================ */
-.debug footer {
-  background-color: #23272a;
+ul {
+  list-style: none;
 }
-
-.debug #red-info {
-  background-color: #f08080;
-}
-
-.debug .skyblue-info {
-  background-color: #20b2aa;
-  border-color: white;
-}
-
-.debug .footer-bottom {
-  background-color: #7fffd4;
-}
-.debug .footer-logo,
-.debug .footer-btn {
-  background-color: #ffb6c1;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ===============
@@ -124,7 +108,6 @@ section.hero {
   text-align: center;
 }
 .header-row ul li {
-  list-style: none;
   display: inline-block;
 }
 .header-row ul li a {
@@ -194,25 +177,47 @@ section h3 {
     footer-top
 ================ */
 footer {
-  border-bottom: 1px solid white;
+  color: white;
+  background-color: #23272a;
+  /* border-bottom: 1px solid white; */
 }
+footer h3,
+footer h5 {
+  color: #7289da;
+}
+footer h3 {
+  font-size: 33px;
+}
+footer h5 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
 .footer-top {
-  padding: 10px 0 40px;
+  padding: 80px 0 40px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: 1px white solid;
 }
 
-#red-info {
-  /* informazione importante del footer top*/
-  width: calc(100% / 3);
+.main-col {
+  width: 25%;
 }
-
-.skyblue-info {
-  width: calc((100% - 100% / 3) / 4);
+.main-col > span::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-image: url(../img/ita.png);
+  background-size: 25px 20px;
 }
-
+.side-col {
+  width: calc((100% - 25%) / 4);
+}
+.footer-top .side-col a {
+  line-height: 45px;
+}
 /* =============
     footer-bottom
 ================ */
