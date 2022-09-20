@@ -105,7 +105,14 @@ p {
 .btn-big {
   font-size: 18px;
 }
-
+/* =============
+    icons
+================ */
+i {
+  margin-inline-end: 0.5rem;
+  /* inline-end, pk qnd cambio writing-mode in arabo o in giapponese,
+  l'icona avrà cmq lo spazio tra le parole  */
+}
 /* =============
     header
 ================ */
