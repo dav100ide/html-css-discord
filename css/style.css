@@ -1,0 +1,173 @@
+/* =============
+    reset
+================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* =============
+    debug
+================ */
+.debug header {
+  background-color: #add8e6;
+}
+.debug .header-row {
+  background-color: #daa520;
+}
+.debug .hero {
+  background-color: #00008b;
+}
+.debug .container > * {
+  border: 2px dashed black;
+}
+.debug .hero-content {
+  border: 2px dashed black;
+  height: 400px;
+  background-color: #ee82ee;
+}
+.debug .row {
+  height: 500px;
+}
+.debug .col-big {
+  background-color: #1e90ff;
+}
+
+.debug .col-small {
+  background-color: #ffc0cb;
+}
+
+.debug main section:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.debug #closing-section {
+  height: 900px;
+  background-color: #228b22;
+}
+.debug footer {
+  background-color: #23272a;
+}
+.debug .footer-top {
+  height: 550px;
+}
+
+.debug #red-info {
+  background-color: #f08080;
+}
+
+.debug .skyblue-info {
+  background-color: #20b2aa;
+  border-color: white;
+}
+
+.debug .footer-bottom {
+  background-color: #7fffd4;
+}
+.debug .footer-logo,
+.debug .footer-btn {
+  background-color: #ffb6c1;
+}
+/* =============
+    common
+================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* =============
+    header
+================ */
+header {
+  padding: 15px 0;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.header-row ul {
+  width: 60%;
+  text-align: center;
+}
+.header-row ul li {
+  list-style: none;
+  display: inline-block;
+}
+.header-row ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-logo,
+.header-btn {
+  width: 20%;
+}
+
+/* ===============
+     hero 
+================*/
+section.hero {
+  padding: 15px 0;
+}
+.hero-content {
+  width: 50%;
+  margin: 0 auto;
+}
+/* =============
+    main
+================ */
+main > section > * {
+  padding: 55px 0;
+}
+.row {
+  display: flex;
+}
+
+.col-big {
+  width: 60%;
+}
+
+.col-small {
+  width: 40%;
+}
+#closing-section {
+  /*la ultima sezione verde*/
+  width: 100%;
+}
+/* =============
+    footer-top
+================ */
+footer {
+  border-bottom: 1px solid white;
+}
+.footer-top {
+  padding: 10px 0 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-bottom: 1px white solid;
+}
+
+#red-info {
+  /* informazione importante del footer top*/
+  width: calc(100% / 3);
+}
+
+.skyblue-info {
+  width: calc((100% - 100% / 3) / 4);
+}
+
+/* =============
+    footer-bottom
+================ */
+.footer-bottom {
+  margin-top: 20px;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo,
+.footer-btn {
+  padding: 5px;
+}
