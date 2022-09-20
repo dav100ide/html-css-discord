@@ -171,9 +171,15 @@ section h3 {
   background-position: center;
 }
 /* le onde tra le sezioni  */
-main section::after {
-  content: url(../img/wave-gray.svg);
+main section:nth-of-type(odd):after {
+  content: '';
+  background-image: url(../img/wave-gray.svg);
+  display: block;
+  height: 80px;
+  /* pseudo elemento solo sulle sezioni bianche(odd) pk sulle
+  quelle grigie non sono visibili */
 }
+
 /* =============
     footer-top
 ================ */
