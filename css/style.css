@@ -9,15 +9,8 @@
 /* =============
     debug
 ================ */
-
-.debug #closing-section {
-  background-color: #228b22;
-}
 .debug footer {
   background-color: #23272a;
-}
-.debug .footer-top {
-  height: 300px;
 }
 
 .debug #red-info {
@@ -50,12 +43,15 @@ h4,
 h5,
 h6 {
   font-family: 'Reem Kufi Ink', sans-serif;
+  padding-bottom: 35px;
 }
 h1 {
   font-size: 45px;
-  margin-bottom: 35px;
 }
 
+h3 {
+  font-size: 30px;
+}
 p {
   line-height: 35px;
 }
@@ -85,6 +81,8 @@ html {
   opacity: 0.8;
 }
 .btn-primary {
+  background-color: #87a2e4;
+  color: white;
 }
 .btn-secondary {
   background-color: #23272a;
@@ -92,6 +90,9 @@ html {
 }
 .btn-big {
   font-size: 18px;
+}
+.btn-small {
+  font-size: 14px;
 }
 /* =============
     icons
@@ -180,6 +181,11 @@ main section:last-of-type {
 .col-small {
   width: 30%;
   padding: 0 25px;
+}
+section h3 {
+  background-image: url(../img/stars.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* =============
