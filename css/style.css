@@ -9,8 +9,8 @@
 /* =============
     debug
 ================ */
-.debug .row {
-  height: 500px;
+.debug main .row {
+  height: 150px;
 }
 .debug .col-big {
   background-color: #1e90ff;
@@ -25,14 +25,14 @@
 }
 
 .debug #closing-section {
-  height: 900px;
+  height: 250px;
   background-color: #228b22;
 }
 .debug footer {
   background-color: #23272a;
 }
 .debug .footer-top {
-  height: 550px;
+  height: 300px;
 }
 
 .debug #red-info {
@@ -87,6 +87,24 @@ p {
 /* ===============
      buttons 
 ================*/
+.btn {
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-primary {
+}
+.btn-secondary {
+  background-color: #23272a;
+  color: white;
+}
+.btn-big {
+  font-size: 18px;
+}
 
 /* =============
     header
@@ -132,12 +150,17 @@ section.hero {
   background-size: cover;
 }
 .hero-content {
-  padding: 130px 0;
+  padding: 120px 0;
   text-align: center;
   max-width: 50%;
   margin: 0 auto;
 }
-.hero-content
+.hero-content .row {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 /* =============
     main
 ================ */
