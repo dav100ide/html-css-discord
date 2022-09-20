@@ -171,13 +171,18 @@ section h3 {
   background-position: center;
 }
 /* le onde tra le sezioni  */
-main section:nth-of-type(odd):after {
+\main section:nth-of-type(odd):after {
   content: '';
   background-image: url(../img/wave-gray.svg);
   display: block;
   height: 80px;
-  /* pseudo elemento solo sulle sezioni bianche(odd) pk sulle
-  quelle grigie non sono visibili */
+}
+main section:nth-of-type(1n + 2):before {
+  content: '';
+  background-image: url(../img/wave-gray.svg);
+  display: block;
+  height: 80px;
+  rotate: 180deg;
 }
 
 /* =============
