@@ -204,6 +204,17 @@ footer h5 {
 .main-col {
   width: 25%;
 }
+.main-col ul {
+  padding-top: 20px;
+}
+.main-col li {
+  margin-inline-end: 10px;
+  display: inline;
+  font-size: 20px;
+}
+.main-col li:hover {
+  color: #7289da;
+}
 .main-col > span::before {
   content: '';
   display: inline-block;
@@ -218,17 +229,14 @@ footer h5 {
 .footer-top .side-col a {
   line-height: 45px;
 }
+.footer-top .side-col a:hover {
+  color: #7289da;
+}
 /* =============
     footer-bottom
 ================ */
 .footer-bottom {
-  margin-top: 20px;
-  padding: 25px 0;
+  padding: 20px 0 60px;
   display: flex;
   justify-content: space-between;
-}
-
-.footer-logo,
-.footer-btn {
-  padding: 5px;
 }
