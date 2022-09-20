@@ -193,7 +193,7 @@ footer {
   background-color: #23272a;
 }
 footer h3,
-footer h5 {
+footer h5:not(.side-col:last-of-type h5) {
   color: #7289da;
 }
 footer h3 {
@@ -241,6 +241,13 @@ footer h5 {
 .footer-top .side-col a:hover {
   color: #7289da;
 }
+.side-col:last-of-type {
+  padding: 15px;
+  color: #23272a;
+  background-color: burlywood;
+  text-align: center;
+  border-radius: 5px;
+}
 /* =============
     footer-bottom
 ================ */
@@ -248,4 +255,13 @@ footer h5 {
   padding: 20px 0 60px;
   display: flex;
   justify-content: space-between;
+}
+/* =============================
+    language select (extra)
+============================== */
+#language {
+  font-family: 'Reem Kufi Ink';
+  min-width: 80%;
+  font-size: 20px;
+  background-color: transparent;
 }
