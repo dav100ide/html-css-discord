@@ -17,11 +17,10 @@ a {
 /* =============
     common
 ================ */
-html {
-  min-width: 1050px;
-  /* soluzione temporanea per il
-      non-responsiveness */
+.image-fluid {
+  width: 100%;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -95,6 +94,7 @@ header {
 }
 .header-row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
@@ -123,10 +123,11 @@ section.hero {
      hero 
 ================*/
 section.hero {
-  height: 500px;
+  min-height: 500px;
   padding: 15px 0;
   background-image: url(../img/jumbo.png);
   background-size: cover;
+  background-position: center;
 }
 .hero-content {
   padding: 120px 0;
@@ -152,6 +153,7 @@ main section:nth-of-type(even) {
 main section:last-of-type {
   text-align: center;
 }
+
 .row {
   display: flex;
 }
@@ -166,22 +168,20 @@ main section:last-of-type {
   padding: 0 25px;
 }
 section h3 {
+  padding-top: 33px;
   background-image: url(../img/stars.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
 }
 /* le onde tra le sezioni  */
-main section:nth-of-type(2n + 1):after {
+main section:nth-of-type(2n + 1):after,
+main section:nth-of-type(1n + 2):before {
   content: '';
   background-image: url(../img/wave-gray.svg);
   display: block;
   height: 80px;
 }
 main section:nth-of-type(1n + 2):before {
-  content: '';
-  background-image: url(../img/wave-gray.svg);
-  display: block;
-  height: 80px;
   rotate: 180deg;
 }
 
